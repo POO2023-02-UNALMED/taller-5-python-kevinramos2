@@ -48,6 +48,6 @@ class Reptil(Animal):
   @classmethod
   def crearIguana(cls, nombre, edad, genero):
     reptil = Reptil(nombre, edad, "humedal", genero, "verde", 3)
-    cls.crearIguanas += 1
+    cls.iguanas += 1
     return reptil
   
