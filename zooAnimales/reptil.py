@@ -40,13 +40,13 @@ class Reptil(Animal):
   #creacion de objetos
 
   @classmethod
-  def crearSerpientes(cls, nombre, edad, genero):
+  def crearSerpiente(cls, nombre, edad, genero):
     reptil = Reptil(nombre, edad, "jungla", genero, "blanco", 1 )
     cls.serpientes += 1
     return reptil
   
   @classmethod
-  def crearIguanas(cls, nombre, edad, genero):
+  def crearIguana(cls, nombre, edad, genero):
     reptil = Reptil(nombre, edad, "humedal", genero, "verde", 3)
     cls.crearIguanas += 1
     return reptil
