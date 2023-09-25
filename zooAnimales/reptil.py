@@ -13,3 +13,41 @@ class Reptil(Animal):
     Reptil._list.append(self)
 
   #métodos
+  @classmethod
+  def getList(cls):
+    return cls._list
+  @classmethod
+  def setList(cls, list):
+    cls._list = list
+  
+  def getColorEscamas(self):
+    return self._colorEscamas 
+  def setColorEscamas(self, colorEscamas):
+    self._colorEscamas = colorEscamas
+
+  def getLargoCola(self):
+    return self._largoCola
+  def setLargocola(self, largoCola):
+    self._largoCola = largoCola
+
+  def movimiento(self):
+    return "reptar"
+  
+  @classmethod
+  def cantidadReptiles(cls):
+    return len(cls._list)
+  
+  #creacion de objetos
+
+  @classmethod
+  def crearSerpientes(cls, nombre, edad, genero):
+    reptil = Reptil(nombre, edad, "jungla", genero, "blanco", 1 )
+    cls.serpientes += 1
+    return reptil
+  
+  @classmethod
+  def crearIguanas(cls, nombre, edad, genero):
+    reptil = Reptil(nombre, edad, "humedal", genero, "verde", 3)
+    cls.crearIguanas += 1
+    return reptil
+  

@@ -13,3 +13,36 @@ class Mamifero(Animal):
     Mamifero._list.append(self)
 
   #métodos
+  @classmethod
+  def getList(cls):
+    return cls._list
+  @classmethod
+  def setList(cls, list):
+    cls._list = list
+  
+  def getPelaje(self):
+    return self._pelaje
+  def setPelaje(self, pelaje):
+    self._pelaje = pelaje
+  
+  def getPatas(self):
+    return self._patas
+  def setPatas(self, patas):
+    self._patas = patas
+
+  @classmethod
+  def cantidadMamiferos(cls):
+    return len(cls._list)
+  
+  #creacion de objetos
+  @classmethod
+  def crearCaballos(cls, nombre, edad, genero):
+    mamifero = Mamifero(nombre, edad, "pradera",genero, True, 4 )
+    cls.caballos += 1
+    return mamifero
+  
+  @classmethod
+  def crearLeones(cls, nombre, edad, genero):
+    mamifero = Mamifero(nombre, edad, "selva", genero, True, 4)
+    cls.leones += 1
+    return mamifero
