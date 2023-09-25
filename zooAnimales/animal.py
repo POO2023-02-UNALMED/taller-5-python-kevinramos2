@@ -48,8 +48,8 @@ class Animal:
     return "Mamiferos : " + str(zoo.mamifero.Mamifero.cantidadMamiferos()) + "\nAves : " + str(zoo.ave.Ave.cantidadAves()) + "\nReptiles : " + str(zoo.reptil.Reptil.cantidadReptiles()) + "\nPeces : " + str(zoo.pez.Pez.cantidadPeces()) + "\nAnfibios : " + str(zoo.anfibio.Anfibio.cantidadAnfibios())
 
   def toString(self):
-    informacion = "Mi nombre es" +self._nombre+ ",tengo una edad de" +str(self._edad)+ ", habito en" + self._habitat +"y mi genero es "+self._genero
-    if(self._zona != None):
-      return informacion+", la zona en la que me ubico es: "+self._zona.getNombre()+", en el "+self._zona.getZoo().getNombre()
-    else:
-      return informacion
+    informacion = "Mi nombre es "+self._nombre+", tengo una edad de "+str(self._edad)+", habito en "+self._habitat+" y mi genero es "+self._genero;
+    if (self._zona != None):
+      return informacion+", la zona en la que me ubico es: "+self._zona.getNombre()+", en el "+self._zona.getZoo().getNombre();
+
+    else: return informacion
