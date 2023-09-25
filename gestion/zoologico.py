@@ -1,20 +1,21 @@
+from gestion.zona import Zona
 class Zoologico:
   #atributos de clase
   def __init__(self, nombre, ubicacion):
-    self.nombre = nombre
-    self.ubicacion = ubicacion
+    self._nombre = nombre
+    self._ubicacion = ubicacion
     self._zona = []
   
   #métodos
 
   def getNombre(self):
-    return self.nombre
+    return self._nombre
   def setNombre(self, nombre):
-    self.nombre = nombre
+    self._nombre = nombre
   def getUbicacion(self):
-    return self.ubicacion
+    return self._ubicacion
   def setUbicacion(self, ubicacion):
-    self.ubicacion = ubicacion
+    self._ubicacion = ubicacion
   def getZona(self):
     return self._zona
   def setZona(self, zona):

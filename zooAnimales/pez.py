@@ -8,8 +8,8 @@ class Pez(Animal):
   #atributos de la clase
   def __init__(self, nombre, edad, habitat, genero, colorEscamas, cantidadAletas):
     super().__init__(nombre, edad, habitat, genero)
-    self.colorEscamas = colorEscamas
-    self.cantidadAletas = cantidadAletas
+    self._colorEscamas = colorEscamas
+    self._cantidadAletas = cantidadAletas
     Pez._list.append(self)
 
   #métodos

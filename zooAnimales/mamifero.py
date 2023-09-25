@@ -8,8 +8,8 @@ class Mamifero(Animal):
   #atributos de la clase
   def __init__(self, nombre, edad, habitat, genero, pelaje, patas):
     super().__init__(nombre,edad,habitat,genero)
-    self.pelaje = pelaje
-    self.patas = patas
+    self._pelaje = pelaje
+    self._patas = patas
     Mamifero._list.append(self)
 
   #métodos

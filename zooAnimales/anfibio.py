@@ -7,8 +7,8 @@ class Anfibio(Animal):
   #atributos de clase
   def __init__(self, nombre,edad, habitat, genero, colorPiel, venenoso):
     super().__init__(nombre, edad, habitat, genero)
-    self.colorPiel = colorPiel
-    self.venenoso = venenoso
+    self._colorPiel = colorPiel
+    self._venenoso = venenoso
     Anfibio._list.append(self)
   
   #métodos
@@ -23,7 +23,7 @@ class Anfibio(Animal):
   def getColorPiel(self):
     return self._colorPiel
   def setColorPiel(self, colorPiel):
-    self.colorPiel = colorPiel
+    self._colorPiel = colorPiel
   
   def isVenenoso(self):
     return self._venenoso

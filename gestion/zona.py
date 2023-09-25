@@ -8,9 +8,9 @@ class Zona:
   #metodos
 
   def getNombre(self):
-    return self.nombre
+    return self._nombre
   def setNombre(self, nombre):
-    self.nombre = nombre
+    self._nombre = nombre
   def getZoo(self):
     return self._zoo
   def setZoo(self, zoo):
@@ -18,7 +18,7 @@ class Zona:
   def getAnimales(self):
     return self._animales
   def setAnimales(self, animales):
-    return self._animales
+    self._animales = animales
   def agregarAnimales(self, animal):
     self._animales.append(animal)
   def cantidadAnimales(self):

@@ -4,12 +4,12 @@ class Animal:
   _totalAnimales = 0
   #atributos de clase
   def __init__(self, nombre, edad, habitat, genero):
-    self.nombre = nombre
-    self.edad = edad
-    self.habitat = habitat
-    self.genero = genero
+    self._nombre = nombre
+    self._edad = edad
+    self._habitat = habitat
+    self._genero = genero
     Animal._totalAnimales += 1
-    self.zona = None
+    self._zona = None
   
   #métodos
 
